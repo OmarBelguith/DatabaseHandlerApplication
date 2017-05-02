@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.databaseapp.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Student Records"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/eName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:ems="10"
+        android:hint="StudentName"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/eSurName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/eName"
+        android:ems="10"
+        android:hint="Student Surname"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/eGrade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/eSurName"
+        android:ems="10"
+        android:hint="Grade"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/eGrade"
+        android:onClick="addStudent"
+        android:text="Add Student" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button"
+        android:onClick="lookUpStudent"
+        android:text="LookUp Student" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button2"
+        android:onClick="deleteStudent"
+        android:text="Delete Student" />
+</RelativeLayout>
